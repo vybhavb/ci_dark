@@ -14,8 +14,10 @@ endif
 
 if s:style == 'darker'
   let s:colors.black = '#0a0a0a'
+  let s:colors.black_light = '#333333'
 else
   let s:colors.black = '#24292e'
+  let s:colors.black_light = '#2d3237'
 endif
 
 let s:colors.red = '#f97583'
@@ -29,7 +31,7 @@ let s:colors.gray = '#959da5'
 
 let s:colors.foreground = s:colors.white
 let s:colors.background = s:colors.black
-let s:colors.background_lighter = '#2d3237'
+let s:colors.background_lighter = s:colors.black_light
 
 let s:colors.selection_bg = '#c8c8fa'
 let s:colors.selection_fg = s:colors.background
