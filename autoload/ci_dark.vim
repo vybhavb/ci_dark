@@ -3,9 +3,21 @@
 " SPDX-License-Identifier: MIT OR Apache-2.0
 " ------------------------------------------------------------------------
 
+" Base colors
 let s:colors = {}
 
-let s:colors.black = '#24292e'
+let s:style = get(g:, 'ci_dark', 'default')
+
+if get(g:, 'ci_darker', 0) == 1
+  let s:style = 'darker'
+endif
+
+if s:style == 'darker'
+  let s:colors.black = '#0a0a0a'
+else
+  let s:colors.black = '#24292e'
+endif
+
 let s:colors.red = '#f97583'
 let s:colors.green = '#85e89d'
 let s:colors.yellow = '#ffea7f'
