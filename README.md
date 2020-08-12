@@ -16,6 +16,8 @@ Plug 'luochen1990/rainbow'
 
 syntax on
 set termguicolors
+" choose type of theme, 'default' or 'darker'
+let g:ci_dark_style = 'darker'
 colorscheme ci_dark
 
 set fillchars+=vert:│
