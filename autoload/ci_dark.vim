@@ -6,7 +6,7 @@
 " Base colors
 let s:colors = {}
 
-let s:style = get(g:, 'ci_dark', 'default')
+let s:style = get(g:, 'ci_dark_style', 'default')
 
 if get(g:, 'ci_darker', 0) == 1
   let s:style = 'darker'
